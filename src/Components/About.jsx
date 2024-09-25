@@ -1,4 +1,5 @@
-
+import BGIMGROTATE from '../assets/bg-img-rotate.jpg'
+import IMGROTATE from '../assets/loop.png'
 function About(props) {
 
 
@@ -8,9 +9,9 @@ function About(props) {
           <div className="flex gap-4 md-custom:flex-row flex-col md:justify-around items-center">
             <div className={`md-custom:w-[50%] w-full mt-0 md-custom:mt-20`}>
               <div className=" relative">
-                <img className="rounded-br-[40%_40%] rounded-bl-[20px_20px] rounded-tl-[20px_20px] rounded-tr-[20px_20px] " src="/bg-img-rotate.jpg" alt="bg-img-rotate"/>
+                <img className="rounded-br-[40%_40%] rounded-bl-[20px_20px] rounded-tl-[20px_20px] rounded-tr-[20px_20px] " src={BGIMGROTATE} alt="bg-img-rotate"/>
               <div className="bg-slate-50 dark:bg-cyan-600 sm:w-32 sm:h-32 md:w-52 md:h-52 md-custom:w-32 w-20 md-custom:h-32 h-20 rounded-[50%] absolute right-0 bottom-0 border-2 border-gray-950 dark:border-slate-50">
-                <img className="animate-rotate" src="/loop.png" alt="rotate" />
+                <img className="animate-rotate" src={IMGROTATE} alt="rotate" />
               </div>
               </div>
             </div>

@@ -1,3 +1,5 @@
+import EMAILIMG from '../assets/email.png';
+import CALLIMG from '../assets/call.png';
 function Contact(props) {
   const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
@@ -24,7 +26,7 @@ function Contact(props) {
           <div className="flex justify-center items-center gap-3">
             <img
               className="rounded-[50%] h-14"
-              src="/email.png"
+              src={EMAILIMG}
               alt="email"
             />
             <div className="flex row">
@@ -42,7 +44,7 @@ function Contact(props) {
             </div>
           </div>
           <div className="flex justify-center items-center gap-3">
-            <img className="rounded-[50%] h-14" src="/call.png" alt="call" />
+            <img className="rounded-[50%] h-14" src={CALLIMG} alt="call" />
             <div className="flex row">
               <h1 className="text-2xl Primary-color uppercase font-bold">
                 Whatsapp Me :
